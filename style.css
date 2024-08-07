@@ -59,62 +59,46 @@ body{
 }
 
 
-.rating > label {
+.rating >  label {
 	color: #b3bbeb;
 	font-size: 30px;
 	padding: 7px;
 	cursor: pointer;
 }
 
- 
-  
 
-
-fieldset:hover label:not(label:hover ~ label){
-	color: green;  /* when label:hover, stars before hovered one get green */
+.rating:hover label:not(label:hover ~ label){
+	color: green;  /* gdy label:hover wcześniejsze gwiazdki zielony */
 	
 }
-
-
 
 label:hover ~ label {
-	color: #b3bbeb;  /* when label:hover, next labels get grey */
+	color: #b3bbeb;  /* szary */
 	
 	
 }
 
- 
 
 input:checked + label {
 	
-	color: #58e060;  /* when input:checked, label immediately after get light green*/
+	color: #58e060;  /* jasny zielony*/
 	
 }
-
-
-
 
 .rating > label:not(input:checked ~ label) {
-	color: #58e060;  /* when input:checked,  stars before get light green*/
+	color: #58e060;  /* gdy input:checked  gwiazdki przed nim jasny zielony*/
 	
 	
 }
-
-
 
 .rating > input:checked ~ label:hover ~ label{
 	 
-	color: #b3bbeb; /* when input:checked, next stars get grey */
+	color: #b3bbeb; /* gdy input:checked następne gwiazdki szary */
 	 
 }
 
  
-
-
  
 
-
-
- 
 
  
